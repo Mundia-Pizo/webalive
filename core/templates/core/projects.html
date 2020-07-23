@@ -1,0 +1,31 @@
+{%extends 'core/layout.html'%}
+{%load static%}
+{%block content%}
+<div class="container">
+    <!-- this is the first project section -->
+    <section class="project-section">
+        <h1>Ecommerce</h1>
+        <img src="{%static 'images/ecomdemo.png'%}" alt="">
+        <a class="project-section" href="{%url 'item-list'%}">
+            <input type="submit" value="View Project">
+         </a>
+        <button>View Live Project</button>
+    </section>
+    
+    <!-- this is the second project section -->
+    <section class="project-section">
+        <h1>Bugtraker</h1>
+        <img src="{%static 'images/bugtracker1.png'%}" alt="">
+        <a class="project-section" href="{%url 'bug-project'%}">
+           <input type="submit" value="View Project">
+        </a>
+        <button>View Live Project</button>
+    </section>
+    <!-- this is the third project section -->
+    <section class="project-section">
+        <h1>Real Estate</h1>
+        <img src="{%static 'images/index.jpeg'%}" alt="">
+        <button>View Live Project</button>
+    </section>
+</div>
+{%endblock%}

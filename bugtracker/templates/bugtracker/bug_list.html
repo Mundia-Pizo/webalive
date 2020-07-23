@@ -1,0 +1,46 @@
+{%extends 'core/layout.html'%}
+{%load static%}
+{%block content%}
+<div class="container bug-tracker">
+        <div class="side-view">
+            <h5>Bugs for:</h5>
+            <h3>{{object.title}}</h3>
+        </div>
+    <div class="content-area about-tag">
+        <nav>
+            <ul>
+                <li><a href="{% url 'bug-project'%}">Project List</a></li>
+                <li><a href="{% url 'addbug'%}">Add bug</a></li>
+                <li><a href="{%url 'resolved' object.id%}">Resolved Bugs</a> </li>
+                <li><a href="http://">Unresolved Bugs</a> </li>
+            </ul>
+        </nav>
+        <div class="form-class">
+            <table class="table-style">
+                <thead class="table-style">
+                    <tr>
+                        <th>name</th>
+                        <th>resolved</th>
+                        <th>id</th>
+                        <th>date created</th>
+                        <th>date resolved</th>
+                    </tr>
+                </thead>
+                <tbody class="table-style" >
+                    {%for bug in object.bugs.all%}
+                    <tr>
+                        <td>{{bug.title}}</td>
+                        <td>{{bug.resolved}}</td>
+                        <td>{{bug.id}}</td>
+                        <td>{{bug.date_created}}</td>
+                        <td>{{bug.date_resolved}}</td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+                
+            </table>
+            
+        </div>
+    </div>
+</div>
+{%endblock%}

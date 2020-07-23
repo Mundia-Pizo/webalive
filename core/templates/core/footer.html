@@ -1,0 +1,32 @@
+<footer class="container footer-tag">
+    <div class="footer">
+        <div class="form-contact">
+            <h1>Contact us</h1>
+            <form method="POST"  action="{%url 'contact'%}" class="form-class">
+                {%csrf_token%}
+                <label for="">email</label>
+                <input type="email">
+                <label for="">text</label>
+                <textarea name="" id="" cols="15" rows="10"></textarea>
+                <button class="button-form" type="submit">send</button>
+            </form>
+        </div>
+        <div class="form-contact">
+            <h1>Services</h1>
+            <ul>
+                <li>Web development</li>
+                <li>Mobile app development ios/android</li>
+                <li>Artifcial intelligence</li>
+                <li>Data science</li>
+                <li>IoT devices </li>
+            </ul>
+        </div>
+        <div class="form-contact">
+            <h1>Location</h1>
+            <p>Am Lusaka based</p>
+        </div>
+    </div>   
+    <div class="copyright">
+        <small >Copyright@2020</small>
+    </div> 
+</footer>

@@ -1,0 +1,19 @@
+{%extends 'core/layout.html'%}
+{%load static%}
+{%block content%}
+<div class="container bug-tracker">
+    <div class="content-area about-tag">
+         {%include 'bugtracker/bugtracker-nav.html'%}
+        <form  method="" action="" class="form-class form-content-section">
+            <legend>Add bug</legend>
+            <label for="">title</label>
+            <input type="text" placeholder="enter the title">
+            <label for="">description</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="submit">Add bug</button>
+        </form>
+    </div>
+</div>
+
+    
+{%endblock%}

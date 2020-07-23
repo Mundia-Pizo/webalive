@@ -1,0 +1,42 @@
+{%extends 'core/layout.html'%}
+{%load static%}
+{%block content%}
+<div class="container bug-tracker">
+        <div class="side-view">
+            <h3>{{object.title}}</h3>
+        </div>
+    <div class="content-area about-tag">
+        {%include 'bugtracker/bugtracker-nav.html'%}
+        <div class="form-class">
+            <table class="table-style">
+                <thead class="table-style">
+                    <tr>
+                        <th>name</th>
+                        <th>resolved</th>
+                        <th>id</th>
+                        <th>date created</th>
+                        <th>date resolved</th>
+                    </tr>
+                </thead>
+                <tbody class="table-style" >
+                    <ol>
+                        {%for bug in object.bugs.all%}
+                        <li>
+                            <tr>
+                                <td>{{bug.title}}</td>
+                                <td>{{bug.resolved}}</td>
+                                <td>{{bug.id}}</td>
+                                <td>{{bug.date_created}}</td>
+                                <td>{{bug.date_resolved}}</td>
+                            </tr>
+                        </li>
+                        {%endfor%}
+                    </ol>
+                </tbody>
+                
+            </table>
+            
+        </div>
+    </div>
+</div>
+{%endblock%}

@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+/* this is a global style for the most part*/
+.container{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ol{
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+}
+/* this is the header section with the header styles*/
+header{
+    background-color:#35424a;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8419d 3px solid;
+}
+header nav a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.bug-image{
+    min-width: 200px;
+}
+
+
+.content-area nav ul{
+    background-color: lightgrey;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px 5px 10px;
+
+}
+.table-style{
+    min-width: 350px;
+
+}
+.table-style tr th,td{
+    padding: 0 0 0 25px;
+}
+
+
+.content-area nav ul li a{
+    text-decoration: none;
+}
+header #branding h1 a{
+    text-emphasis: none;
+    color: white;
+    text-decoration: none;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+header branding h1{
+    margin: 0;
+}
+
+header nav{
+    float:right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a, .container .highlight{
+    color: #e8419d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+    font-weight: bold;
+}
+.project-section{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0 0 20px;
+    margin: auto;
+}
+.project-section img{
+    min-height: 400px;
+}
+.footer-tag{
+    margin-bottom: 75px;
+}
+.center {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+aside{
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 600px;
+    margin-bottom: 60px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    flex-wrap: wrap;
+}
+
+.project-section button{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    display: block;
+    text-transform: uppercase;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color:#a5d6a7;
+    color: white;
+}
+.icon-section{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    flex-wrap: wrap;
+}
+.about-tag{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.about-tag aside{
+    float: right;
+    min-width: 200px;
+}
+.side-view{
+    float: left;
+    min-width: 200px;
+    flex-direction: column;
+    background-color: powderblue;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+}
+.content-area{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.bug-tracker{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 25px;
+
+}
+#showcase{
+    background: url('../images/background.jpg') no-repeat 0;
+    min-height: 400px;
+    text-align: center;
+    align-items: center;
+    color: white;
+    height: 600px;
+    
+}
+
+#showcase .container h1 {
+    padding-top: 75px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase .container p{
+    font-size: 18px;
+}
+.button-form{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.opaque{
+    background-color: gray;
+    /* opacity: 0.9; */
+}
+/* this sis for the ecomerce only */
+.card-item{
+    background-color: powderblue;
+    border: 1px solid #c0c0c0;
+    width: max-content;
+    padding: 20px 20px 0 20px;
+    margin:0 20px 0 20px;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 15px;
+}
+.row-items{
+    flex-direction: row;
+    display: flex;
+    margin-top: 35px;
+    flex-wrap: wrap;
+}
+.card-item input, .item-buttons input{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float:right;
+}
+.item-buttons input{
+    background-color: powderblue;
+    color: blue;
+}
+.item-image{
+    min-height: 100px;
+    object-fit: cover;
+    margin: auto;
+}
+.description-section{
+   width: 500px;
+   float:right;
+   padding:0 40px 0 40px
+}
+.item-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: none;
+}
+/* this is where ecomerce ends */
+.icon{
+    height: 195px;
+    padding: 0 20px 0  20px;
+}
+.icon-card{
+    width: 200px;
+    color: black;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.skillset{
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    padding-top: 35px;
+}
+.form-class{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 20px 20px;
+}
+.form-content-section{
+    min-width: 600px;
+}
+.form-class button{
+    color: blue;
+    padding:0 20px 0 20px;
+}
+.portrait-image{
+    border-radius: 50%;
+    border: 1px #cce1 solid;
+    margin: 20px 20px 10px 10px;
+}
+.copyright{
+    display: flex;
+    font-weight: bold;
+    margin-top: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* now making the website mobile friendly through media queries*/
+/* Now the 768 px i usually the the width of the tablets*/
+
+@media(max-width:768px){
+    header #branding,
+    header nav li{
+        float:none;
+        text-align: center;
+        width: 100%;
+        padding-top: 0px;
+        margin: 0px;
+    }
+   
+    header{
+        padding-bottom: 20px;
+    }
+    #showcase .container p, .resp-text{
+        color: #000;
+    }
+    #showcase .container h1{
+        margin-top: 40px;
+    }
+    header li{
+        padding: 0 10px 0 10px;
+    }
+    header ul{
+        margin: auto;
+    }
+    header .container nav ul{
+        align-items: center;
+        float: center;
+        margin: 0;
+    }
+    aside{
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 90%;
+    margin-bottom: 60px;
+    }
+
+    .footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 15px;
+    flex-wrap: wrap;
+    }
+    .form-contact, .form-contact ul{
+       align-items: center;
+       display: flex;
+       flex-direction: column;
+    }
+    .side-view{
+        float: none;
+        min-width: 200px;
+        flex-direction: column;
+        background-color: powderblue;
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+    }
+    .bug-tracker{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        
+    }
+    .icon-position{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icon-image{
+        min-width: 10px;
+        min-height: 25px;
+    }
+    .table-style tr th,td{
+        padding: 0 4px 0 4px;
+        width: 100%;
+        font-size: smaller;
+    }
+    .table-style{
+        min-width: 100%;
+    
+    }
+    .bug-image{
+        margin: auto;
+    }
+    .form-content-section{
+        min-width: 100px;
+    }
+    
+
+}
+
+
+
+
+

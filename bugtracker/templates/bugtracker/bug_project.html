@@ -1,0 +1,27 @@
+{%extends 'core/layout.html'%}
+{%load static%}
+{%block content%}
+<section class="project-section">
+    <div class="container bug-tracker">
+        <div class="side-view">
+            <h3>Projects</h3>
+            <ol>
+            {% for project in object_list%}
+                <h2><li>
+                    <a href="{% url 'bugs' project.id%}">{{project.title}}</a></li></h2>
+                <br>
+            {%endfor%}
+            </ol>
+        </div>
+    <div class="project-section">
+        <div class="content-area about-tag">
+            <div class="showcase">
+                <img src="{%static 'images/bigbug3.png'%}" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+    
+{%endblock%}

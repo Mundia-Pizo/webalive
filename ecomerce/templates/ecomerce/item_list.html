@@ -1,0 +1,20 @@
+{%extends 'core/layout.html'%}
+{%block content%}
+    <div class="container">
+        <h1>This is an e-commerce Demo</h1>
+        <div class="row-items">
+            {%for item in object_list%}
+                <div class="card-item">
+                    <img class="item-image" src="{{item.image.url}}" alt="">
+                    <h1>{{item.title}}</h1>
+                    <h4>price: ${{item.price}}</h4>
+                    <a href="{%url 'item-detail' item.id %}">
+                      <input type="button" value="View">
+                    </a>
+                </div>
+            {%endfor%}
+        </div>
+    </div> 
+{%endblock%}
+
+

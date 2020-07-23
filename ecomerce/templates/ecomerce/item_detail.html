@@ -1,0 +1,26 @@
+{%extends 'core/layout.html'%}
+{%block content%}
+    <div class="container">
+        <h1>This is an e-commerce Demo</h1>
+        <div class="row-items">
+                
+                <div class="card-item">
+                    <img class="item-image" src="{{item.image.url}}" alt="">
+                    <h1>{{object.title}}</h1>
+                    <h4>price: ${{object.price}}</h4>
+                </div>
+                <div class="description-section">
+                    <h1>Description</h1>
+                    <p>{{object.description}}</p>
+
+                <div class="item-buttons">
+                    <input type="button" value="add to card">
+                    <a href="{%url 'item-list'%}">
+                        <input type="button" value="go back">
+                    </a>
+                    
+                </div>
+                </div>
+        </div>
+    </div> 
+{%endblock%}
